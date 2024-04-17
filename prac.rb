@@ -15,7 +15,7 @@ puts valid_password?("Passw0rd")
 puts valid_password?("pass")
 
 def find_numbers(text)
-  pattern = /\d+(\.\d+)?/
+  pattern = /[-+]?\d*\.?\d+/
   text.scan(pattern)
 end
 
